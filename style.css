@@ -1,0 +1,255 @@
+.navbar-nav .nav-link {
+  font-weight: bold; /* Make text bold */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #28a745; /* Success color (green) on hover */
+}
+.bg-success {
+  border-bottom: none !important;
+}
+.icon {
+  font-size: 50px;
+  color: white;
+  background-color: #28a745;
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.intro-text h2 {
+  font-weight: bold;
+  color: #000;
+}
+
+.intro-text p {
+  color: #000;
+  font-size: 14px;
+}
+
+.ftco-intro {
+  background-color: #28a745;
+  color: white;
+  padding: 50px 0;
+}
+
+.ftco-intro .icon {
+  margin-right: 20px;
+}
+.card-hover:hover {
+  background-color: #e8f5e9; /* light green */
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.icon {
+  font-size: 3rem;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+.card-body h5 {
+  font-weight: bold;
+}
+
+.card-body p {
+  color: #6c757d;
+}
+
+.card-deck .card {
+  border: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@keyframes move-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icon-circle {
+  animation: move-up 0.8s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0; /* Hidden initially */
+}
+
+.icon-circle:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.icon-circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.icon-circle:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.form-container {
+  background-image: url("./Images/bg_2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(88, 145, 103, 0.5);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  position: relative;
+  z-index: 2; /* Above the overlay */
+}
+
+.form-container button {
+  padding: 8px 16px;
+}
+.testimonial-section {
+  background: url("./Images/bg_3.jpg") no-repeat center center/cover;
+  position: relative;
+  padding: 80px 0;
+  color: white;
+}
+.testimonial-section h2 {
+  font-weight: bold;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 139, 34, 0.5);
+  z-index: 1;
+}
+.content {
+  position: relative;
+  z-index: 2;
+}
+.testimonial-card {
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+.testimonial-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.carousel-indicators button {
+  background-color: #589167;
+}
+.carousel-indicators .active {
+  background-color: #2f684b;
+}
+.active-item {
+  background-color: #589167;
+  color: white;
+}
+.card {
+  position: relative;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-circle {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-circle .circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.button-circle:hover {
+  background-color: #589167;
+}
+
+.button-circle:hover svg {
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.card-text {
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #fff;
+  color: #28a745;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover .badge {
+  background-color: #004d00;
+  color: #fff;
+}
